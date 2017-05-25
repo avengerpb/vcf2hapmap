@@ -1,6 +1,8 @@
 FROM centos
 RUN yum update
 
+RUN yum install perl -y
+
 ENV HOME=/var/opt
 
 
