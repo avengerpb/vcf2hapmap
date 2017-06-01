@@ -3,7 +3,7 @@ FROM alpine
 ENV  HOME=/var/opt
 COPY vcf2FastaAndHapmap.sh $HOME/
 COPY VCF2FastaAndHapmap.pl $HOME/VCF2FastaAndHapmap1.pl
-
+WORKDIR $HOME
 RUN apk add --update perl && rm -rf /var/cache/apk/* &&\
 	apk add --update perl-par-packer && rm -rf /var/cache/apk/* && \
 	apk add --update perl-archive-zip && rm -rf /var/cache/apk/* && \
