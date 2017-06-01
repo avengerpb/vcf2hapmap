@@ -10,7 +10,7 @@ RUN apk add --update perl && rm -rf /var/cache/apk/* &&\
 	apk add --update perl-module-scandeps &&\
 	apk add --update perl-par &&\
 	apk add --update perl-getopt-argvfile &&\
-	apk add --update apk add bash &&\
+	apk add --update bash &&\
 	pp -o VCF2FastaAndHapmap.pl VCF2FastaAndHapmap1.pl &&\
 	apk del perl-par-packer && \
 	apk del perl-archive-zip && \
