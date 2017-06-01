@@ -8,6 +8,7 @@ RUN apk add --update perl && rm -rf /var/cache/apk/* &&\
 	apk add --update perl-par-packer && rm -rf /var/cache/apk/* && \
 	apk add --update perl-archive-zip && rm -rf /var/cache/apk/* && \
 	apk add --update perl-archive-zip && \
+	apk add --update perl-module-install &&\
 	pp -o VCF2FastaAndHapmap.pl VCF2FastaAndHapmap1.pl &&\
 	apk del perl-par-packer && \
 	apk del perl &&\
