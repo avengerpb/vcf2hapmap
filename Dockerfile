@@ -7,9 +7,9 @@ COPY VCF2FastaAndHapmap.pl $HOME/VCF2FastaAndHapmap1.pl
 RUN apk add --update perl && rm -rf /var/cache/apk/* &&\
 	apk add --update perl-par-packer && rm -rf /var/cache/apk/* && \
 	apk add --update perl-archive-zip && rm -rf /var/cache/apk/* && \
-	apk add --update perl-archive-zip && \
-	apk add --update perl-module-install &&\
-	apk add --update perl-module-scandeps-doc &&\
+	apk add --update perl-module-scandeps &&\
+	apk add --update perl-par &&\
+	apk add --update perl-getopt-argvfile &&\
 	pp -o VCF2FastaAndHapmap.pl VCF2FastaAndHapmap1.pl &&\
 	apk del perl-par-packer && \
 	apk del perl &&\
